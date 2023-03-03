@@ -8,12 +8,30 @@ const rock_div = document.getElementById("r")
 const paper_div = document.getElementById("p")
 const scissors_div = document.getElementById("s")
 
-rock_div.addEventListener('click', function() {
-    console.log("hey you clicked on rock");
+function getComputerChoice() {
+    const choices = ['r', 'p', 's'];
+    const randomNumber = (Math.floor(Math.random() * 3));
+    return choices[randomNumber];
+}                        
+
+function game(userChoice) {
+    
+}
+
+
+// event listeners to create actions on r/p/s images
+function main() {
+  rock_div.addEventListener('click', function() {
+    game("r");
 })
-paper_div.addEventListener('click', function() {
-    console.log("hey you clicked on paper");
+
+  paper_div.addEventListener('click', function() {
+    game("p");
 })
-scissors_div.addEventListener('click', function() {
-    console.log("hey you clicked on scissors");
+
+  scissors_div.addEventListener('click', function() {
+    game("s");
 })
+}
+
+main();

@@ -15,6 +15,8 @@ function getComputerChoice() {
 }                        
 
 function game(userChoice) {
+    const computerChoice = getComputerChoice
+    console.log(computerChoice);
     
 }
 

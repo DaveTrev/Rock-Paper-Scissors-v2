@@ -1,9 +1,9 @@
-const userScore = 0;
-const computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
-const computerScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_div = document.querySelector(".result")
+const result_p = document.querySelector(".result > p")
 const rock_div = document.getElementById("r")
 const paper_div = document.getElementById("p")
 const scissors_div = document.getElementById("s")
@@ -13,7 +13,29 @@ function getComputerChoice() {
     const choices = ['r', 'p', 's'];
     const randomNumber = (Math.floor(Math.random() * 3));
     return choices[randomNumber];
-}                        
+}  
+
+// function to convert r,p,s to readable rock, paper, scissors
+function convertToWord(letter) {
+  if (letter === "r") return "Rock";
+  if (letter === "p") return "Paper";
+  return "Scissors";
+}
+
+// functions to state win, lose or draw (user or computer)
+function win(userChoice, computerChoice) {
+ userScore++;
+ userScore_span.innerHTML = userScore;
+ computerScore_span.innerHTML = computerScore;
+ result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)} You WIN!!`;
+}
+
+function lose() {
+  console.log("LOST!");
+}
+function draw() {
+  console.log("DRAW!");
+}
 
 // The logic of game, win, lose, draw conditions
 function game(userChoice) {
@@ -22,17 +44,17 @@ function game(userChoice) {
       case "rs":
       case "pr":
       case "sp":
-        console.log("User Wins");
+        win(userChoice, computerChoice);
         break;
       case "rp":
       case "ps":
       case "sr":
-            console.log("User Loses!");
+            lose(userChoice, computerChoice);
             break;
       case "rr":
       case "pp":
       case "ss":
-        console.log("Its a draw");
+        draw(userChoice, computerChoice);
         break;
 
     }

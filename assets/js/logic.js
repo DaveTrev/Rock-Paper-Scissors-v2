@@ -30,18 +30,24 @@ const userChoice_div = document.getElementById(userChoice)
  computerScore_span.innerHTML = computerScore;
  result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)} You WIN!! 🎉🎉🎉 `;
  userChoice_div.classList.add('green-glow');
- setTimeout(function() {userChoice_div.classList.remove('green-glow')}, 200); 
+ setTimeout(() => userChoice_div.classList.remove('green-glow'), 200); 
 }
 
 function lose(userChoice, computerChoice) {
+const userChoice_div = document.getElementById(userChoice)
  computerScore++;
  userScore_span.innerHTML = userScore;
  computerScore_span.innerHTML = computerScore;
  result_p.innerHTML = `${convertToWord(userChoice)} loses ${convertToWord(computerChoice)} You LOST. 💩💩💩`;
+ userChoice_div.classList.add('red-glow');
+ setTimeout(() => userChoice_div.classList.remove('red-glow'), 200);
 }
 
 function draw(userChoice, computerChoice) {
+  const userChoice_div = document.getElementById(userChoice)
   result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)} Its a Draw! 👔👔👔`;
+  userChoice_div.classList.add('gray-glow');
+  setTimeout(() => userChoice_div.classList.remove('gray-glow'), 200);
 }
 
 // The logic of game, win, lose, draw conditions
@@ -70,17 +76,11 @@ function game(userChoice) {
 
 // event listeners to create actions on r/p/s images
 function main() {
-  rock_div.addEventListener('click', function() {
-    game("r");
-})
+  rock_div.addEventListener('click', () => game("r"));
 
-  paper_div.addEventListener('click', function() {
-    game("p");
-})
+  paper_div.addEventListener('click', () => game("p"));
 
-  scissors_div.addEventListener('click', function() {
-    game("s");
-})
+  scissors_div.addEventListener('click',() =>  game("s"));
 }
 
 main();

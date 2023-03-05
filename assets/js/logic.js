@@ -13,7 +13,7 @@ const scissors_div = document.getElementById("s")
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
-    const randomNumber = (Math.floor(Math.random() * 3.5));
+    const randomNumber = (Math.floor(Math.random() * 3));
     return choices[randomNumber];
 }  
 

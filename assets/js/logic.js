@@ -1,3 +1,5 @@
+// Cache the dom (storing for future use) & reset everything to 0 value
+
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
@@ -8,21 +10,21 @@ const rock_div = document.getElementById("r")
 const paper_div = document.getElementById("p")
 const scissors_div = document.getElementById("s")
 
-// computer choice is an array of choices via random number generation
+// Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
     const randomNumber = (Math.floor(Math.random() * 3.5));
     return choices[randomNumber];
 }  
 
-// function to convert r,p,s to readable rock, paper, scissors
+// function to convert r,p,s to a human readable rock, paper, scissors
 function convertToWord(letter) {
   if (letter === "r") return "Rock";
   if (letter === "p") return "Paper";
   return "Scissors";
 }
 
-// functions to state win, lose or draw (user or computer)
+// Winning Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function win(userChoice, computerChoice) {
 const userChoice_div = document.getElementById(userChoice)
  userScore++;
@@ -33,6 +35,7 @@ const userChoice_div = document.getElementById(userChoice)
  setTimeout(() => userChoice_div.classList.remove('green-glow'), 200); 
 }
 
+// Losing Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function lose(userChoice, computerChoice) {
 const userChoice_div = document.getElementById(userChoice)
  computerScore++;
@@ -43,6 +46,7 @@ const userChoice_div = document.getElementById(userChoice)
  setTimeout(() => userChoice_div.classList.remove('red-glow'), 200);
 }
 
+// Draw Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function draw(userChoice, computerChoice) {
   const userChoice_div = document.getElementById(userChoice)
   result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)},  Its a Tie! 👔👔👔`;
@@ -50,7 +54,7 @@ function draw(userChoice, computerChoice) {
   setTimeout(() => userChoice_div.classList.remove('gray-glow'), 200);
 }
 
-// The logic of game, win, lose, draw conditions
+// The logic of game, win, lose, draw conditions aka "paper" beats "rock" etc
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -74,8 +78,7 @@ function game(userChoice) {
 
 }
 
-// event listeners to create actions on r/p/s images
-function main() {
+// event listeners to create actions on r/p/s html element and passes that element value through the game function
   rock_div.addEventListener('click', () => game("r"));
 
   paper_div.addEventListener('click', () => game("p"));

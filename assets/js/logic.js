@@ -1,5 +1,4 @@
 // Cache the dom (storing for future use) & reset everything to 0 value
-
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
@@ -79,6 +78,7 @@ function game(userChoice) {
 }
 
 // event listeners to create actions on r/p/s html element and passes that element value through the game function
+function main (){
   rock_div.addEventListener('click', () => game("r"));
 
   paper_div.addEventListener('click', () => game("p"));

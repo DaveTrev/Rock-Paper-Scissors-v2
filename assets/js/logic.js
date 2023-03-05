@@ -11,7 +11,7 @@ const scissors_div = document.getElementById("s")
 // computer choice is an array of choices via random number generation
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
-    const randomNumber = (Math.floor(Math.random() * 3));
+    const randomNumber = (Math.floor(Math.random() * 3.5));
     return choices[randomNumber];
 }  
 
@@ -24,18 +24,24 @@ function convertToWord(letter) {
 
 // functions to state win, lose or draw (user or computer)
 function win(userChoice, computerChoice) {
+const userChoice_div = document.getElementById(userChoice)
  userScore++;
  userScore_span.innerHTML = userScore;
  computerScore_span.innerHTML = computerScore;
- const smallUserWord = "user".fontsize(3)
- result_p.innerHTML = `${convertToWord(userChoice)}(user) beats ${convertToWord(computerChoice)}(comp) You WIN!!`;
+ result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)} You WIN!! 🎉🎉🎉 `;
+ userChoice_div.classList.add('green-glow');
+ setTimeout(function() {userChoice_div.classList.remove('green-glow')}, 200); 
 }
 
-function lose() {
-  console.log("LOST!");
+function lose(userChoice, computerChoice) {
+ computerScore++;
+ userScore_span.innerHTML = userScore;
+ computerScore_span.innerHTML = computerScore;
+ result_p.innerHTML = `${convertToWord(userChoice)} loses ${convertToWord(computerChoice)} You LOST. 💩💩💩`;
 }
-function draw() {
-  console.log("DRAW!");
+
+function draw(userChoice, computerChoice) {
+  result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)} Its a Draw! 👔👔👔`;
 }
 
 // The logic of game, win, lose, draw conditions

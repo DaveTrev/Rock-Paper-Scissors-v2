@@ -7,3 +7,8 @@ paper https://www.clipartmax.com/download/m2i8d3Z5i8i8Z5K9_cartoon-emoji-paper-r
 resized clip art using https://pixlr.com/x/#editor
 
 edited and reduced clip art style to 100px x 100 px for better positioning on mobile
+
+emojis taken from https://emojipedia.org/party-popper/
+https://emojipedia.org/necktie/
+https://emojipedia.org/pile-of-poo/
+

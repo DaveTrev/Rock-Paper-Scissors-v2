@@ -49,7 +49,7 @@ function lose(userChoice, computerChoice) {
     computerChoice
   )},  You LOST. 💩💩💩`;
   if (computerScore === 10) {
-    Swal.fire('You lose! Better luck next time!')
+    Swal.fire('YOU LOSE, Better luck next time!')
     reset()
   }
   userChoice_div.classList.add("red-glow");

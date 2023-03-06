@@ -28,11 +28,11 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
+  result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} beats ${convertToWord(
     computerChoice
   )},  You WIN!! 🎉🎉🎉 `;
   if (userScore === 10) {
-    alert("YOU WIN, CONGRATULATIONS!");
+    Swal.fire('YOU WIN, CONGRATULATIONS!')
     reset()
   }
   userChoice_div.classList.add("green-glow");
@@ -45,11 +45,11 @@ function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(
+  result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} loses to ${convertToWord(
     computerChoice
   )},  You LOST. 💩💩💩`;
   if (computerScore === 10) {
-    alert("You lose! Better luck next time!")
+    Swal.fire('You lose! Better luck next time!')
     reset()
   }
   userChoice_div.classList.add("red-glow");

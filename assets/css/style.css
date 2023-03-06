@@ -85,13 +85,19 @@ cursor: pointer;
 background: #393c42;
 }
 
-#action-message {
+#reset {
     text-align: center;
     color: white;
     font-family: 'Tilt Neon', sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-top: 50px;
+}
+
+button {
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 15px;
+    color: #d34036;
 }
 
 .green-glow {

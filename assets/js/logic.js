@@ -11,7 +11,7 @@ const scissors_div = document.getElementById("s");
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
-    const randomNumber = (Math.floor(Math.random() * 3));
+    const randomNumber = (Math.floor(Math.random() * 3 + 1));
     return choices[randomNumber];
 }  
 
@@ -76,6 +76,7 @@ function game(userChoice) {
 
 }
 
+
 // event listeners to create actions on r/p/s html element and passes that element value through the game function
 function main (){
   rock_div.addEventListener('click', () => game("r"));
@@ -86,3 +87,10 @@ function main (){
 }
 
 main();
+
+// reset function
+const reset=() => {
+  document.getElementById("user-score").innerHTML = 0;
+  document.getElementById("computer-score").innerHTML = 0;
+}
+

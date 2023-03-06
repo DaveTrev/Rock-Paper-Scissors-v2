@@ -11,7 +11,7 @@ const scissors_div = document.getElementById("s");
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
-    const randomNumber = (Math.floor(Math.random() * 3 + 1));
+    const randomNumber = (Math.floor(Math.random() * 3));
     return choices[randomNumber];
 }  
 
@@ -88,8 +88,10 @@ function main (){
 
 main();
 
-// reset function
-const reset=() => {
+// reset button to set scores for user and comp to 0
+function reset() {
+  userScore = 0;
+  computerScore = 0;
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
 }

@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
-  </head>
 
-  <body>
-    <header>
-      <h1>Rock Paper Scissors</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css" />
+</head>
 
-<main>
-<!--creating a area for the user to input their name and start the game-->
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+
+  <main>
+    <!--creating a area for the user to input their name and start the game
 <section id="user-name-area" class="sign-in-area">
   <h2>Enter user name to play!</h2>
 <input title="username" type="text" id="username">
 <button id="submit">Let's play</button>
-</section>
+</section>   <div id="game-area" class="hide"> -->
 
 
-<div id="game-area" class="hide">
-
-
-  <!-- scoreboard to show user score vs computer score-->
+    <!-- scoreboard to show user score vs computer score-->
     <div class="score-board">
       <div id="user-label" class="badge">user</div>
       <div id="computer-label" class="badge">comp</div>
       <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
-<!-- result section, text displayed to show user choice vs comp choice to detail who has won or lost the round-->
+    <!-- result section, text displayed to show user choice vs comp choice to detail who has won or lost the round-->
     <div class="result">
       <p></p>
     </div>
-<!--choices section, user can pick between rock paper scissors to engage with the game-->
+    <!--choices section, user can pick between rock paper scissors to engage with the game-->
     <div class="choices">
       <div class="choice" id="r">
         <img src="images/rock100px.png" alt="cartoon rock" />
@@ -48,21 +46,36 @@
         <img src="images/scissors100px.png" alt="cartoon scissors" />
       </div>
     </div>
-<!-- reset button to bring the score back to zero, planning to add a modal popup to display rules and link to the world association of rock paper scissors-->
+    <!-- reset button to bring the score back to zero, planning to add a modal popup to display rules and link to the world association of rock paper scissors-->
     <div id="reset">
       <p id="action-message">Make your move - First to 5 Wins!</p>
       <button onclick="reset()">Reset the Game!</button>
-      <br />
+      <br>
+      <button id="open">click me</button>
+      <div class="modal-container" id="modal_container">
+        <div class="modal" id="">
+          <h1>Test of a modal</h1>
+          <p>Dummy text goes here!!</p>
+          <button id="close">Close me</button>
+        </div>
+      </div>
+      </div>
+      
+
     </div>
-  </div>
+    </div>
+
+
+
 
   </main>
-<!-- footer with copyright-->
-    <footer>
-      <div class="footer">© DaveTrev 2023</div>
-    </footer>
-<!-- javascript script area-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!-- footer with copyright-->
+  <footer>
+    <div class="footer">© DaveTrev 2023</div>
+  </footer>
+  <!-- javascript script area-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

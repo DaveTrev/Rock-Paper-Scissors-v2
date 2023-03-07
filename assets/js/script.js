@@ -7,16 +7,20 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+// modal open and close
+const open = document.getElementById("open");
+const modal_container = document.getElementById("modal_container");
+const close = document.getElementById("close")
 
+// setting up modal open and close
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');
+});
 
-function setName() {
-  nameValue.innerText = nameInput.value;
-}
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+});
 
-function toggleGame() {
-  nameArea.classList.add('hide');
-  gameArea.classList.remove('hide');
-}
 
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
@@ -38,12 +42,12 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} beats ${convertToWord(
-    computerChoice
-  )},  You WIN!! 🎉🎉🎉 `;
+  result_p.innerHTML = `Your choice of ${convertToWord(
+    userChoice
+  )} beats ${convertToWord(computerChoice)},  You WIN!! 🎉🎉🎉 `;
   if (userScore === 5) {
-    Swal.fire('YOU WIN, CONGRATULATIONS!')
-    reset()
+    Swal.fire("YOU WIN, CONGRATULATIONS!");
+    reset();
   }
   userChoice_div.classList.add("green-glow");
   setTimeout(() => userChoice_div.classList.remove("green-glow"), 200);
@@ -55,12 +59,12 @@ function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} loses to ${convertToWord(
-    computerChoice
-  )},  You LOST. 💩💩💩`;
+  result_p.innerHTML = `Your choice of ${convertToWord(
+    userChoice
+  )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`;
   if (computerScore === 5) {
-    Swal.fire('YOU LOSE, Better luck next time!')
-    reset()
+    Swal.fire("YOU LOSE, Better luck next time!");
+    reset();
   }
   userChoice_div.classList.add("red-glow");
   setTimeout(() => userChoice_div.classList.remove("red-glow"), 200);
@@ -116,3 +120,6 @@ function reset() {
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
 }
+
+
+

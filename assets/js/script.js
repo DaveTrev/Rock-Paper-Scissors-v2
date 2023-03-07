@@ -8,6 +8,16 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
+
+function setName() {
+  nameValue.innerText = nameInput.value;
+}
+
+function toggleGame() {
+  nameArea.classList.add('hide');
+  gameArea.classList.remove('hide');
+}
+
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
   const choices = ["r", "p", "s"];
@@ -31,7 +41,7 @@ function win(userChoice, computerChoice) {
   result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} beats ${convertToWord(
     computerChoice
   )},  You WIN!! 🎉🎉🎉 `;
-  if (userScore === 10) {
+  if (userScore === 5) {
     Swal.fire('YOU WIN, CONGRATULATIONS!')
     reset()
   }
@@ -48,7 +58,7 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `Your choice of ${convertToWord(userChoice)} loses to ${convertToWord(
     computerChoice
   )},  You LOST. 💩💩💩`;
-  if (computerScore === 10) {
+  if (computerScore === 5) {
     Swal.fire('YOU LOSE, Better luck next time!')
     reset()
   }

@@ -14,19 +14,29 @@
       <h1>Rock Paper Scissors</h1>
     </header>
 
-  <div id="game-area" class="hide">
+<main>
+<!--creating a area for the user to input their name and start the game-->
+<section id="user-name-area" class="sign-in-area">
+  <h2>Enter user name to play!</h2>
+<input title="username" type="text" id="username">
+<button id="submit">Let's play</button>
+</section>
 
 
+<div id="game-area" class="hide">
+
+
+  <!-- scoreboard to show user score vs computer score-->
     <div class="score-board">
       <div id="user-label" class="badge">user</div>
       <div id="computer-label" class="badge">comp</div>
       <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
-
+<!-- result section, text displayed to show user choice vs comp choice to detail who has won or lost the round-->
     <div class="result">
       <p></p>
     </div>
-
+<!--choices section, user can pick between rock paper scissors to engage with the game-->
     <div class="choices">
       <div class="choice" id="r">
         <img src="images/rock100px.png" alt="cartoon rock" />
@@ -38,17 +48,20 @@
         <img src="images/scissors100px.png" alt="cartoon scissors" />
       </div>
     </div>
-
+<!-- reset button to bring the score back to zero, planning to add a modal popup to display rules and link to the world association of rock paper scissors-->
     <div id="reset">
-      <p id="action-message">Make your move - Best of five!</p>
+      <p id="action-message">Make your move - First to 5 Wins!</p>
       <button onclick="reset()">Reset the Game!</button>
       <br />
     </div>
+  </div>
 
+  </main>
+<!-- footer with copyright-->
     <footer>
       <div class="footer">© DaveTrev 2023</div>
     </footer>
-
+<!-- javascript script area-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/script.js"></script>
   </body>

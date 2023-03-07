@@ -24,13 +24,12 @@ header>h1 {
     font-family: "Tilt Neon", sans-serif;
 }
 
-/** sign in form 
-
 h2 {
-    padding: 3rem;
+color: white;
+padding: 5rem;
 }
 
-.signin {
+.sign-in-area{
     display: inline-block;
     width: 100%;
     justify-content: center;
@@ -38,18 +37,9 @@ h2 {
     margin-bottom: 10px;
 }
 
-.signin p {
-    margin: 10px;
-}
-
 #submit {
-    font-size: 1rem;
-    border: solid 1px;
-    padding: revert;
-    cursor: pointer;
-    background-color: #b99c7f;
-    margin: 15px 15px 20px 15px;
-} **/
+    
+}
 
 .score-board {
     border: 3px solid white;

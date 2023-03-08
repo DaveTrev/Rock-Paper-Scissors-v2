@@ -126,7 +126,6 @@ button {
 }
 
 .modal-container {
-    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     display: flex;
     align-items: center;
@@ -147,19 +146,23 @@ button {
 
 .modal {
     background-color: #ffffff;
-    padding: 40px 50px;
-    border-radius: 5px;
-    width: 600px;
-    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal h1 {
     margin: 0;
+    color: rgb(12, 12, 12);
+    font-size: large;
 }
 
 .modal p {
     font-size: 14px;
     opacity: 0.7;
+    color: black;
+    font-size: large;
 } 
 
 .green-glow {

@@ -11,6 +11,16 @@ const scissors_div = document.getElementById("s");
 const open = document.getElementById("open");
 const modal_container = document.getElementById("modal_container");
 const close = document.getElementById("close")
+// sign in for user, input user name to score board and start game
+const nameValue = document.getElementById("name")
+const inputName = document.getElementById("yourname")
+const letsPlay = document.getElementById("play")
+const gameArea = document.getElementById("game-area")
+const enterName = document.getElementById("enter-name")
+
+// creating sign-in area for user
+letsPlay.addEventListener('click', (e))
+
 
 // setting up modal open and close
 open.addEventListener('click', () => {

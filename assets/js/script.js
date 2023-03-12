@@ -11,38 +11,6 @@ const scissors_div = document.getElementById("s");
 const open = document.getElementById("open");
 const modal_container = document.getElementById("modal_container");
 const close = document.getElementById("close")
-// sign in for user, input user name to score board and start game
-const nameValue = document.getElementById("name")
-const inputName = document.getElementById("yourname")
-const letsPlay = document.getElementById("play")
-const enterName = document.getElementById("enter-name")
-const gameArea = document.getElementById("game-area")
-
-
-// creating sign-in area for user
-letsPlay.addEventListener('click', (e) => {
-  if (inputName.value) {
-    setName();
-    gameToggle();
-  }
-  else {
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please enter your name to play a game',
-    });
-    document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
-  }
-});
-
-function inputName() {
-  nameValue.innerText = inputName.value
-}
-
-function gameToggle() {
-  enterName.classList.add('hide');
-  gameArea.classList.remove('hide');
-}
 
 
 // setting up modal open and close

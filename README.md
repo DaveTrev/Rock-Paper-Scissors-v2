@@ -26,3 +26,5 @@ Offical rules of RPS taken from
 Get element bu tagName
 - http://www.jspatterns.com/the-ridiculous-case-of-adding-a-script-element/
 
+https://stackoverflow.com/questions/37412166/how-to-make-show-hide-div-with-a-toggle-using-css
+

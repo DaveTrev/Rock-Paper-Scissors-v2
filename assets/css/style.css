@@ -43,6 +43,10 @@ h2 {
     cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+
 .score-board {
     border: 3px solid white;
     border-radius: 8px;

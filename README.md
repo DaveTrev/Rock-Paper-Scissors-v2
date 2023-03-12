@@ -23,3 +23,6 @@ emojis taken from
 Offical rules of RPS taken from 
 - https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
 
+Get element bu tagName
+- http://www.jspatterns.com/the-ridiculous-case-of-adding-a-script-element/
+

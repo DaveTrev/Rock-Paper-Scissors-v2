@@ -15,11 +15,34 @@ const close = document.getElementById("close")
 const nameValue = document.getElementById("name")
 const inputName = document.getElementById("yourname")
 const letsPlay = document.getElementById("play")
-const gameArea = document.getElementById("game-area")
 const enterName = document.getElementById("enter-name")
+const gameArea = document.getElementById("game-area")
+
 
 // creating sign-in area for user
-letsPlay.addEventListener('click', (e))
+letsPlay.addEventListener('click', (e) => {
+  if (inputName.value) {
+    setName();
+    gameToggle();
+  }
+  else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter your name to play a game',
+    });
+    document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
+  }
+});
+
+function inputName() {
+  nameValue.innerText = inputName.value
+}
+
+function gameToggle() {
+  enterName.classList.add('hide');
+  gameArea.classList.remove('hide');
+}
 
 
 // setting up modal open and close

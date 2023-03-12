@@ -7,7 +7,7 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
-// modal open and close
+// modal open and close -- using florin pop guide to making a modal popup https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/  
 const open = document.getElementById("open");
 const modal_container = document.getElementById("modal_container");
 const close = document.getElementById("close")

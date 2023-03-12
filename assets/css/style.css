@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
-@import '@sweetalert2/theme-dark/dark.scss';
+@import 'sweetalert2/src/sweetalert2.scss';
 
 * {
     margin: 0;
@@ -144,6 +144,7 @@ button {
     opacity: 1;
 }
 
+/* using florin pop guide to making a modal https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/ */
 .modal {
     background-color: #ffffff;
     position: fixed;

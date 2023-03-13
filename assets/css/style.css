@@ -44,12 +44,12 @@ h2 {
 }
 
 #errorpg {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-color: white;
-padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
 }
 
 /* sign in form css */

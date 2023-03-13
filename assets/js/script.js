@@ -2,25 +2,31 @@
 let userScore = 0;
 let computerScore = 0;
 let uName = "";
-const userScore_span = document.getElementById("user-score");
-const computerScore_span = document.getElementById("computer-score");
-const userName_div = document.getElementById("name");
-const result_p = document.querySelector(".result > p");
-const rock_div = document.getElementById("r");
-const paper_div = document.getElementById("p");
-const scissors_div = document.getElementById("s");
+const userScoreSpan = document.getElementById("user-score");
+const computerScoreSpan = document.getElementById("computer-score");
+const userNameDiv = document.getElementById("name");
+const resultP = document.querySelector(".result > p");
+const rockDiv = document.getElementById("r");
+const paperDiv = document.getElementById("p");
+const scissorsDiv = document.getElementById("s");
 // modal open and close -- using florin pop guide to making a modal popup https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/
-const open_modal = document.getElementById("openThis");
-const modal_container = document.getElementById("modal_container");
-const close_modal = document.getElementById("closeThis");
+const openModal = document.getElementById("openThis");
+const modalContainer = document.getElementById("modalContainer");
+const closeModal = document.getElementById("closeThis");
+const playmeBtn = document.getElementById("play-me");
 
-// setting up modal open and close
-open_modal.addEventListener("click", () => {
-  modal_container.classList.add("show");
+
+playmeBtn.addEventListener("click", () => {
+  isNameValid();
 });
 
-close_modal.addEventListener("click", () => {
-  modal_container.classList.remove("show");
+// setting up modal open and close
+openModal.addEventListener("click", () => {
+  modalContainer.classList.add("show");
+});
+
+closeModal.addEventListener("click", () => {
+  modalContainer.classList.remove("show");
 });
 
 // Function to handle username input
@@ -29,16 +35,16 @@ function getUser_Name() {
   x.style.display = "none";
   var y = document.getElementById("gameDiv");
   y.style.display = "block";
-  userName_div.innerHTML = uName;
+  userNameDiv.innerHTML = uName;
 }
 
 function isNameValid() {
   uName = document.getElementById("username").value;
-  if (uName === "") {
+  if (uName.trim() == "") {
     Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please enter a user name!',
+      icon: "error",
+      title: "Oops...",
+      text: "Please enter a user name!",
     });
   } else {
     getUser_Name();
@@ -63,9 +69,9 @@ function convertToWord(letter) {
 function win(userChoice, computerChoice) {
   const userChoice_div = document.getElementById(userChoice);
   userScore++;
-  userScore_span.innerHTML = userScore;
-  computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `Your choice of ${convertToWord(
+  userScoreSpan.innerHTML = userScore;
+  computerScoreSpan.innerHTML = computerScore;
+  resultP.innerHTML = `Your choice of ${convertToWord(
     userChoice
   )} beats ${convertToWord(computerChoice)},  You WIN!! 🎉🎉🎉 `;
   if (userScore === 5) {
@@ -80,9 +86,9 @@ function win(userChoice, computerChoice) {
 function lose(userChoice, computerChoice) {
   const userChoice_div = document.getElementById(userChoice);
   computerScore++;
-  userScore_span.innerHTML = userScore;
-  computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = `Your choice of ${convertToWord(
+  userScoreSpan.innerHTML = userScore;
+  computerScoreSpan.innerHTML = computerScore;
+  resultP.innerHTML = `Your choice of ${convertToWord(
     userChoice
   )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`; // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost
   if (computerScore === 5) {
@@ -96,7 +102,7 @@ function lose(userChoice, computerChoice) {
 // Draw Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function draw(userChoice, computerChoice) {
   const userChoice_div = document.getElementById(userChoice);
-  result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(
+  resultP.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(
     computerChoice
   )},  Its a Tie! 👔👔👔`;
   userChoice_div.classList.add("gray-glow");
@@ -127,11 +133,11 @@ function game(userChoice) {
 
 // event listeners to create actions on r/p/s html element and passes that element value through the game function
 function main() {
-  rock_div.addEventListener("click", () => game("r"));
+  rockDiv.addEventListener("click", () => game("r"));
 
-  paper_div.addEventListener("click", () => game("p"));
+  paperDiv.addEventListener("click", () => game("p"));
 
-  scissors_div.addEventListener("click", () => game("s"));
+  scissorsDiv.addEventListener("click", () => game("s"));
 }
 
 main();
@@ -142,4 +148,5 @@ function reset() {
   computerScore = 0;
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
+  document.getElementById(".result > p").innerHTML = ""; // not working in returning resultP to a blank state, on bug fix list
 }

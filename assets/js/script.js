@@ -10,19 +10,18 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 // modal open and close -- using florin pop guide to making a modal popup https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/
-const open = document.getElementById("openThis");
+const open_modal = document.getElementById("openThis");
 const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("closeThis");
+const close_modal = document.getElementById("closeThis");
 
 // setting up modal open and close
-open.addEventListener("click", () => {
+open_modal.addEventListener("click", () => {
   modal_container.classList.add("show");
 });
 
-close.addEventListener("click", () => {
+close_modal.addEventListener("click", () => {
   modal_container.classList.remove("show");
 });
-
 
 // Function to handle username input
 function getUser_Name() {
@@ -36,7 +35,7 @@ function getUser_Name() {
   y.style.display = "block";
   uName = document.getElementById("username").value;
   userName_div.innerHTML = uName;
-} 
+}
 
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {

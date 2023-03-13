@@ -146,7 +146,7 @@ main();
 function reset() {
   userScore = 0;
   computerScore = 0;
+  document.getElementById(".result > p").innerHTML = (""); // not working in returning resultP to a blank state, on bug fix list
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
-  document.getElementById(".result > p").innerHTML = ""; // not working in returning resultP to a blank state, on bug fix list
 }

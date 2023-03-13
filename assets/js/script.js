@@ -26,20 +26,20 @@ close.addEventListener('click', () => {
 
 // Setting onload to hide game portion
 function initpg() {
-  var y = document.getElementById("GameDiv");
+  var y = document.getElementById("gameDiv");
   y.style.display = "none";
   document.getElementById("name").innerHTML = name;
 }
 
 // Function to handle username input
 function GetUsername() {
-  var x = document.getElementById("SignDiv");
+  var x = document.getElementById("signDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-  var y = document.getElementById("GameDiv");
+  var y = document.getElementById("gameDiv");
   y.style.display = "block";
   uName = document.getElementById("username").value;
   userName_div.innerHTML = uName;

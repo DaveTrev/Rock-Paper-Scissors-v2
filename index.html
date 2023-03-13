@@ -16,12 +16,14 @@
   </header>
 
   <main>
-    <div id="SignDiv" class="sign-in">
+    <div id="signDiv" class="sign-in">
       <h2>Enter your Name to play a game</h2>
-      <input title="yourname" type="text" id="username" name="name" required>
+      <input title="yourname" type="text" id="username" name="name" required
+      minlength="4" maxlength="8" size="10">
       <button onclick="GetUsername()">Click me to Play a Game!</button>
+      <p id="">Enter a user name between 4 and 8 characters</p>
     </div>
-    <div id="GameDiv">
+    <div id="gameDiv">
 
       <!-- scoreboard to show user score vs computer score-->
       <div class="score-board">

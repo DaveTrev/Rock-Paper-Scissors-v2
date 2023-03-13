@@ -1,6 +1,14 @@
 Live site - https://davetrev.github.io/Rock-Paper-Scissors-v2/
 
 
+## Validator Testing  
+  
+ - HTML 
+   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fdavetrev.github.io%2Fbark-and-stride%2F) 
+ - CSS 
+   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavetrev.github.io%2Fbark-and-stride%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
 
 using youtube - https://www.youtube.com/watch?v=jaVNP3nIAv0 as inspiration
 modal button build - https://www.youtube.com/watch?v=MBaw_6cPmAw&t=27s

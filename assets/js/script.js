@@ -32,7 +32,7 @@ function initpg() {
 }
 
 // Function to handle username input
-function GetUsername() {
+function getUsername() {
   var x = document.getElementById("signDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -70,7 +70,7 @@ function win(userChoice, computerChoice) {
     userChoice
   )} beats ${convertToWord(computerChoice)},  You WIN!! 🎉🎉🎉 `;
   if (userScore === 5) {
-    Swal.fire("YOU WIN, CONGRATULATIONS!");
+    Swal.fire("YOU WIN, CONGRATULATIONS!"); // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost 
     reset();
   }
   userChoice_div.classList.add("green-glow");
@@ -85,7 +85,7 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `Your choice of ${convertToWord(
     userChoice
-  )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`;
+  )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`; // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost 
   if (computerScore === 5) {
     Swal.fire("YOU LOSE, Better luck next time!");
     reset();

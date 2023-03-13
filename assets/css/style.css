@@ -145,6 +145,15 @@ padding-top: 50px;
     margin-top: 50px;
 }
 
+#resetbtn {
+    text-align: center;
+    color: white;
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
 button {
     font-family: "Tilt Neon", sans-serif;
     font-size: 15px;

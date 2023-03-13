@@ -26,21 +26,23 @@ close_modal.addEventListener("click", () => {
 // Function to handle username input
 function getUser_Name() {
   var x = document.getElementById("signDiv");
-  x.style.display === "none";
+  x.style.display = "none";
   var y = document.getElementById("gameDiv");
   y.style.display = "block";
-  uName = document.getElementById("username").value;
   userName_div.innerHTML = uName;
 }
 
 function isNameValid() {
   uName = document.getElementById("username").value;
   if (uName === "") {
-    uName = "Player";
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter a user name!',
+    });
+  } else {
     getUser_Name();
-} else {
-        getUser_Name();
-    } 
+  }
 }
 
 // Setting up computer choice. using math.random to loop through an array to return a value

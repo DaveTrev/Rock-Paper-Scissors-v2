@@ -29,3 +29,7 @@ Get element bu tagName
 https://stackoverflow.com/questions/37412166/how-to-make-show-hide-div-with-a-toggle-using-css
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html
+https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text

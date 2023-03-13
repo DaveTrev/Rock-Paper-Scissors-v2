@@ -10,59 +10,63 @@
   <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
-<body>
+<body onload="initpg()">
   <header>
-    <h1>Rock Paper Scissors</h1>
+    <a href="index.html" ><h1>Rock Paper Scissors</h1></a>
   </header>
 
   <main>
- 
+    <div id="SignDiv" class="sign-in">
+      <h2>Enter your Name to play a game</h2>
+      <input title="yourname" type="text" id="username" name="name" required>
+      <button onclick="GetUsername()">Click me to Play a Game!</button>
+    </div>
+    <div id="GameDiv">
 
-  
-    <!-- scoreboard to show user score vs computer score-->
-    <div class="score-board">
-      <div id="user-label" class="badge"><span id="name">user</span></div>
-      <div id="computer-label" class="badge">comp</div>
-      <span id="user-score">0</span>:<span id="computer-score">0</span>
-    </div>
-    <!-- result section, text displayed to show user choice vs comp choice to detail who has won or lost the round-->
-    <div class="result">
-      <p></p>
-    </div>
-    <!--choices section, user can pick between rock paper scissors to engage with the game-->
-    <div class="choices">
-      <div class="choice" id="r">
-        <img src="images/rock100px.png" alt="cartoon rock" />
+      <!-- scoreboard to show user score vs computer score-->
+      <div class="score-board">
+        <div id="user-label" class="badge"><span id="name"></span></div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
       </div>
-      <div class="choice" id="p">
-        <img src="images/paper100px.png" alt="cartoon paper" />
+      <!-- result section, text displayed to show user choice vs comp choice to detail who has won or lost the round-->
+      <div class="result">
+        <p></p>
       </div>
-      <div class="choice" id="s">
-        <img src="images/scissors100px.png" alt="cartoon scissors" />
-      </div>
-    </div>
-    <!-- reset button to bring the score back to zero, planning to add a modal popup to display rules and link to the world association of rock paper scissors-->
-    <div id="reset">
-      <p id="action-message">Make your move - First to 5 Wins!</p>
-      <button onclick="reset()" >Reset the Game!</button>
-      <br>
-      <button id="open">Click me to read the rules</button>
-      <!-- using florin pop as a guide for modal pop up-->
-      <div class="modal-container" id="modal_container">
-        <div class="modal" id="">
-          <h1>Rules of Rock paper scissors</h1>
-          <p>Rock wins over scissors (because rock smashes scissors)
-            <br>
-            Scissors wins over paper (because scissors cut paper)
-            <br>
-            Paper wins over rock (because paper covers rock)
-          </p>
-          <button id="close">Click to close</button>
+      <!--choices section, user can pick between rock paper scissors to engage with the game-->
+      <div class="choices">
+        <div class="choice" id="r">
+          <img src="images/rock100px.png" alt="cartoon rock" />
+        </div>
+        <div class="choice" id="p">
+          <img src="images/paper100px.png" alt="cartoon paper" />
+        </div>
+        <div class="choice" id="s">
+          <img src="images/scissors100px.png" alt="cartoon scissors" />
         </div>
       </div>
-    </div>
+      <!-- reset button to bring the score back to zero, planning to add a modal popup to display rules and link to the world association of rock paper scissors-->
+      <div id="reset">
+        <p id="action-message">Make your move - First to 5 Wins!</p>
+        <button onclick="reset()">Reset the Score!</button>
+        <br>
+        <button id="open">Click me to read the rules</button>
+        <!-- using florin pop as a guide for modal pop up-->
+        <div class="modal-container" id="modal_container">
+          <div class="modal" id="">
+            <h1>Rules of Rock paper scissors</h1>
+            <p>Rock wins over scissors (because rock smashes scissors)
+              <br>
+              Scissors wins over paper (because scissors cut paper)
+              <br>
+              Paper wins over rock (because paper covers rock)
+            </p>
+            <button id="close">Click to close</button>
+          </div>
+        </div>
+      </div>
 
-  </div>
+    </div>
 
 
     </div>

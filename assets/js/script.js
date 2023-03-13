@@ -1,8 +1,10 @@
 // Cache the dom (storing for future use) & reset everything to 0 value
 let userScore = 0;
 let computerScore = 0;
+let uName = "Player";
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
+const userName_div = document.getElementById("name");
 const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
@@ -21,6 +23,27 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
+
+// Setting onload to hide game portion
+function initpg() {
+  var y = document.getElementById("GameDiv");
+  y.style.display = "none";
+  document.getElementById("name").innerHTML = name;
+}
+
+// Function to handle username input
+function GetUsername() {
+  var x = document.getElementById("SignDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var y = document.getElementById("GameDiv");
+  y.style.display = "block";
+  uName = document.getElementById("username").value;
+  userName_div.innerHTML = uName;
+}
 
 
 // Setting up computer choice. using math.random to loop through an array to return a value
@@ -121,6 +144,3 @@ function reset() {
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
 }
-
-
-

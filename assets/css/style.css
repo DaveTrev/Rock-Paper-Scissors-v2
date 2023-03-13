@@ -147,10 +147,10 @@ padding-top: 50px;
 
 #resetbtn {
     text-align: center;
-    color: white;
+    color: #d34036;
     font-family: "Tilt Neon", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    
+    font-size: 15px;
     margin-top: 50px;
 }
 

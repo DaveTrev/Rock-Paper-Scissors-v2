@@ -35,15 +35,14 @@ function getUser_Name() {
 
 function isNameValid() {
   uName = document.getElementById("username").value;
-  if (uName === ("")) {
-    Swal.fire({
+  if (uName === (""))
+    Swal.fire(
       icon: 'error',
       title: 'Oops...',
       text: 'Please enter a username',
-    }) else {
+    ) else {
         getUser_Name();
-    }
-  }
+    } 
 }
 
 // Setting up computer choice. using math.random to loop through an array to return a value

@@ -33,3 +33,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html
 https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text
+https://www.youtube.com/watch?v=w9GNyw8AvlM
+https://www.geeksforgeeks.org/form-validation-using-html-javascript/?ref=lbp
+https://www.w3schools.com/js/js_if_else.asp

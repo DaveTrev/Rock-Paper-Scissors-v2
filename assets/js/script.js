@@ -35,12 +35,10 @@ function getUser_Name() {
 
 function isNameValid() {
   uName = document.getElementById("username").value;
-  if (uName === (""))
-    Swal.fire(
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please enter a username',
-    ) else {
+  if (uName === "") {
+    uName = "Player";
+    getUser_Name();
+} else {
         getUser_Name();
     } 
 }

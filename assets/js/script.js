@@ -28,7 +28,7 @@ close.addEventListener('click', () => {
 function initpg() {
   var y = document.getElementById("gameDiv");
   y.style.display = "none";
-  document.getElementById("name").innerHTML = name;
+  document.getElementById("name").innerHTML = uName;
 }
 
 // Function to handle username input

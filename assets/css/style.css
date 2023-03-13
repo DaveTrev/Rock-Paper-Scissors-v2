@@ -39,6 +39,10 @@ h2 {
     padding: 5rem;
 }
 
+#charlength {
+    color: white;
+}
+
 #errorpg {
 display: flex;
 flex-direction: column;

@@ -1,7 +1,7 @@
 // Cache the dom (storing for future use) & reset everything to 0 value
 let userScore = 0;
 let computerScore = 0;
-let uName = "Player";
+let uName = "";
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const userName_div = document.getElementById("name");
@@ -26,15 +26,24 @@ close_modal.addEventListener("click", () => {
 // Function to handle username input
 function getUser_Name() {
   var x = document.getElementById("signDiv");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  x.style.display === "none";
   var y = document.getElementById("gameDiv");
   y.style.display = "block";
   uName = document.getElementById("username").value;
   userName_div.innerHTML = uName;
+}
+
+function isNameValid() {
+  uName = document.getElementById("username").value;
+  if (uName === ("")) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter a username',
+    }) else {
+        getUser_Name();
+    }
+  }
 }
 
 // Setting up computer choice. using math.random to loop through an array to return a value

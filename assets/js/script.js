@@ -23,15 +23,9 @@ close.addEventListener("click", () => {
   modal_container.classList.remove("show");
 });
 
-// Setting onload to hide game portion
-function initpg(_,) {
-  var y = document.getElementById("gameDiv");
-  y.style.display = "none";
-  document.getElementById("name").innerHTML = uName;
-}
 
 // Function to handle username input
-function getUser_Name(_,) {
+function getUser_Name() {
   var x = document.getElementById("signDiv");
   if (x.style.display === "none") {
     x.style.display = "block";

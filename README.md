@@ -1,4 +1,3 @@
-Live site - https://davetrev.github.io/Rock-Paper-Scissors-v2/
 
 
 ## Validator Testing  
@@ -34,6 +33,8 @@ Offical rules of RPS taken from
 Get element bu tagName
 - http://www.jspatterns.com/the-ridiculous-case-of-adding-a-script-element/
 
+using https://www.iloveimg.com/crop-image for cropping images for readme
+
 https://stackoverflow.com/questions/37412166/how-to-make-show-hide-div-with-a-toggle-using-css
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
@@ -46,3 +47,9 @@ https://www.geeksforgeeks.org/form-validation-using-html-javascript/?ref=lbp
 https://www.w3schools.com/js/js_if_else.asp
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+https://forum.rescript-lang.org/t/coding-habit-of-unused-variables/3371/5
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/
+https://www.geeksforgeeks.org/difference-between-addeventlistener-and-onclick-in-javascript/
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

@@ -9,30 +9,29 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
-// modal open and close -- using florin pop guide to making a modal popup https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/  
-const open = document.getElementById("open");
+// modal open and close -- using florin pop guide to making a modal popup https://www.florin-pop.com/blog/2019/04/how-to-create-a-modal/
+const open = document.getElementById("openThis");
 const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("close")
-
+const close = document.getElementById("closeThis");
 
 // setting up modal open and close
-open.addEventListener('click', () => {
-  modal_container.classList.add('show');
+open.addEventListener("click", () => {
+  modal_container.classList.add("show");
 });
 
-close.addEventListener('click', () => {
-  modal_container.classList.remove('show');
+close.addEventListener("click", () => {
+  modal_container.classList.remove("show");
 });
 
 // Setting onload to hide game portion
-function initpg() {
+function initpg(_,) {
   var y = document.getElementById("gameDiv");
   y.style.display = "none";
   document.getElementById("name").innerHTML = uName;
 }
 
 // Function to handle username input
-function getUsername() {
+function getUser_Name(_,) {
   var x = document.getElementById("signDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -43,8 +42,7 @@ function getUsername() {
   y.style.display = "block";
   uName = document.getElementById("username").value;
   userName_div.innerHTML = uName;
-}
-
+} 
 
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
@@ -70,7 +68,7 @@ function win(userChoice, computerChoice) {
     userChoice
   )} beats ${convertToWord(computerChoice)},  You WIN!! 🎉🎉🎉 `;
   if (userScore === 5) {
-    Swal.fire("YOU WIN, CONGRATULATIONS!"); // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost 
+    Swal.fire("YOU WIN, CONGRATULATIONS!"); // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost
     reset();
   }
   userChoice_div.classList.add("green-glow");
@@ -85,7 +83,7 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `Your choice of ${convertToWord(
     userChoice
-  )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`; // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost 
+  )} loses to ${convertToWord(computerChoice)},  You LOST. 💩💩💩`; // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost
   if (computerScore === 5) {
     Swal.fire("YOU LOSE, Better luck next time!");
     reset();

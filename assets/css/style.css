@@ -189,11 +189,7 @@ button {
     transform: translate(-50%, -50%);
 }
 
-.modal h1 {
-    margin: 0;
-    color: rgb(12, 12, 12);
-    font-size: large;
-}
+
 
 .modal p {
     font-size: 14px;

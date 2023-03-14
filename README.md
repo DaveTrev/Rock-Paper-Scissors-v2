@@ -53,3 +53,6 @@ https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/
 https://www.geeksforgeeks.org/difference-between-addeventlistener-and-onclick-in-javascript/
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+https://favicon.io/
+https://www.w3schools.com/html/html_favicon.asp

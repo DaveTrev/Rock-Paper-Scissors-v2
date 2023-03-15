@@ -273,7 +273,7 @@ The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=
 All images for the icon creation came from the following sources 
 Rock - (https://www.clipartmax.com/download/m2H7Z5K9A0Z5K9A0_cartoon-rock-paper-scissors/)
 Scissors - (https://www.clipartmax.com/download/m2i8d3Z5A0N4H7b1_scissors-cartoon-cartoon-rock-paper-scissors/)
-Paper - (https://www.clipartmax.com/download/m2i8d3Z5i8i8Z5K9_cartoon-emoji-paper-rock-scissors-icon-rock-paper-scissors-emoji/e
+Paper - (https://www.clipartmax.com/middle/m2i8d3Z5i8i8Z5K9_cartoon-emoji-paper-rock-scissors-icon-rock-paper-scissors-emoji/)
 emojis taken from
 - Party - (https://emojipedia.org/party-popper/)
 - Tie - (https://emojipedia.org/necktie/)

@@ -51,9 +51,9 @@ function isNameValid() {
   }
 }
 
-// recognise pressing enter on keyboard 
+// recognise pressing "Enter" on keyboard 
 document.querySelector("#username").addEventListener("keyup", event => {
-  if(event.key !== "Enter") return;
+  if (event.key !== "Enter") return;
   document.querySelector("#play-me").click();
   event.preventDefault();
 });

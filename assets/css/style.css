@@ -179,6 +179,7 @@ button {
 .modal-container.show {
     pointer-events: auto;
     opacity: 1;
+    line-height: 1.5;
 }
 
 .modal {

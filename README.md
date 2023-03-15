@@ -158,15 +158,22 @@ HTML, CSS, Javascript
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-* [iloveimg](https://www.iloveimg.com/crop-image) To resize and crop images
+* [iloveimg](https://www.iloveimg.com/crop-image) - To resize and crop images
 
-* [Favicon.io](https://favicon.io/) To create favicon for browser tab
+* [Favicon.io](https://favicon.io/) - To create favicon for browser tab
 
-* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
-* [Pixlr.com](https://pixlr.com/x/#editor) To edit image sizes.
-* [Clipartmax.com](https://www.clipartmax.com) For the royalty free clipart images to use as icons for the game
-* [emojipedia.org](https://emojipedia.org) used as a source for the emojis displayed during game play.
-* [Stackedit](https://stackedit.io/) A browser based Markdown editor
+* [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
+
+* [Pixlr.com](https://pixlr.com/x/#editor) - To edit image sizes.
+
+* [Clipartmax.com](https://www.clipartmax.com) - For the royalty free clipart images to use as icons for the game.
+
+* [emojipedia.org](https://emojipedia.org) - Used as a source for the emojis displayed during game play.
+
+* [Stackedit](https://stackedit.io/) - A browser based Markdown editor.
+
+* [FontAwesome](https://fontawesome.com/) - Used for Icons.
+
 
 - - -
 

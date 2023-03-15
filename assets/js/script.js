@@ -51,6 +51,13 @@ function isNameValid() {
   }
 }
 
+// recognise pressing enter on keyboard 
+document.querySelector("#username").addEventListener("keyup", event => {
+  if(event.key !== "Enter") return;
+  document.querySelector("#play-me").click();
+  event.preventDefault();
+});
+
 // Setting up computer choice. using math.random to loop through an array to return a value
 function getComputerChoice() {
   const choices = ["r", "p", "s"];
@@ -148,4 +155,5 @@ function reset() {
   computerScore = 0;
   document.getElementById("user-score").innerHTML = 0;
   document.getElementById("computer-score").innerHTML = 0;
+  resultP.innerHTML = ``;
 }

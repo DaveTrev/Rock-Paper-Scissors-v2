@@ -278,6 +278,6 @@ All other content for the site, such as introduction messages and instructions w
 
 ### Acknowledgments
 * I would like to thank my mentor [Jubril  Akolade](https://github.com/Jubrillionaire) whos support and patience helped guide me through this project.
-* Also a big thank you to [Brian Kilduff](https://github.com/MistaKD) who was a fantastic  sounding board when I was facing issues that I couldn't figure out and get pass!
+* Also a big thank you to [Brian Kilduff](https://github.com/MistaKD) who was a fantastic sounding board when I was facing issues that I couldn't figure out and doubted getting passed them!
 
 - - -

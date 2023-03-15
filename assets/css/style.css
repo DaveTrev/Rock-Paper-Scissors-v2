@@ -198,14 +198,14 @@ button {
 }
 
 /* */
-.green-glow {
-    border: 4px solid #4dcc7d;
-    box-shadow: 0 0 10px #31b43a;
+.win-glow {
+    border: 4px solid #45cf7a;
+    box-shadow: 0 0 10px #2bac34;
 }
 
-.red-glow {
-    border: 4px solid #fc121b;
-    box-shadow: 0 0 10px #d01115;
+.lose-glow {
+    border: 4px solid #ec151c;
+    box-shadow: 0 0 10px #c91619;
 }
 
 .gray-glow {

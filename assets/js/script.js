@@ -67,7 +67,7 @@ function convertToWord(letter) {
 
 // Winning Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function win(userChoice, computerChoice) {
-  const userChoice_div = document.getElementById(userChoice);
+  const userChoiceDiv = document.getElementById(userChoice);
   userScore++;
   userScoreSpan.innerHTML = userScore;
   computerScoreSpan.innerHTML = computerScore;
@@ -78,13 +78,13 @@ function win(userChoice, computerChoice) {
     Swal.fire("YOU WIN, CONGRATULATIONS!"); // using sweet alert2 [https://sweetalert2.github.io/] to highlight user Wins and games lost
     reset();
   }
-  userChoice_div.classList.add("green-glow");
-  setTimeout(() => userChoice_div.classList.remove("green-glow"), 200);
+  userChoiceDiv.classList.add("win-glow");
+  setTimeout(() => userChoiceDiv.classList.remove("win-glow"), 200);
 }
 
 // Losing Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function lose(userChoice, computerChoice) {
-  const userChoice_div = document.getElementById(userChoice);
+  const userChoiceDiv = document.getElementById(userChoice);
   computerScore++;
   userScoreSpan.innerHTML = userScore;
   computerScoreSpan.innerHTML = computerScore;
@@ -95,18 +95,18 @@ function lose(userChoice, computerChoice) {
     Swal.fire("YOU LOSE, Better luck next time!");
     reset();
   }
-  userChoice_div.classList.add("red-glow");
-  setTimeout(() => userChoice_div.classList.remove("red-glow"), 200);
+  userChoiceDiv.classList.add("lose-glow");
+  setTimeout(() => userChoiceDiv.classList.remove("lose-glow"), 200);
 }
 
 // Draw Condition - what happens when a user clicks on one of the choices and how the value is passed through the parameter
 function draw(userChoice, computerChoice) {
-  const userChoice_div = document.getElementById(userChoice);
+  const userChoiceDiv = document.getElementById(userChoice);
   resultP.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(
     computerChoice
   )},  Its a Tie! 👔👔👔`;
-  userChoice_div.classList.add("gray-glow");
-  setTimeout(() => userChoice_div.classList.remove("gray-glow"), 200);
+  userChoiceDiv.classList.add("gray-glow");
+  setTimeout(() => userChoiceDiv.classList.remove("gray-glow"), 200);
 }
 
 // The logic of game, win, lose, draw conditions aka "paper" beats "rock" etc
@@ -114,12 +114,12 @@ function game(userChoice) {
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
     case "rs":
-    case "pr":
     case "sp":
+    case "pr":
       win(userChoice, computerChoice);
       break;
-    case "rp":
     case "ps":
+    case "rp":
     case "sr":
       lose(userChoice, computerChoice);
       break;

@@ -1,3 +1,5 @@
+
+
 # Rock Paper Scissors
 
 The website Rock Paper Scissors, is a simple page for users to try their hand at a game of Rock Paper Scissors against a CPU opponent. The first player to get to 5 points wins!
@@ -15,20 +17,17 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
 * [Design](#Design)
   * [Colour Scheme](#Colour-Scheme)
   * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
   * [Features](#Features)
     * [The Home Page](#The-Home-Page)
     * [The Game Page](#The-Game-Page)
     * [The High Scores Page](#The-High-Scores-Page)
     * [The 404 Error Page](#The-404-Error-Page)
     * [Future Implementations](#Future-Implementations)
-  * [Accessibility](#Accessibility)
-
+    
 * [Technologies Used](#Technologies-Used)
   * [Languages Used](#Languages-Used)
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-
+  
 * [Deployment & Local Development](#Deployment-&-Local-Development)
   * [Deployment](#Deployment)
   * [Local Development](#Local-Development)
@@ -36,8 +35,8 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Known Bugs](#Known-Bugs)
+* [Fixed Bugs](###Fixed-Bugs)
+  * [Known Bugs](###Known-Bugs)
   
 * [Credits](#Credits)
   * [Code Used](#Code-Used)
@@ -46,6 +45,7 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
   * [Acknowledgments](#Acknowledgments)
 
 - - -
+![The Quiz Arms Banner](documentation/the-quiz-arms-banner.png)
 
 ## User Experience (UX)
 
@@ -118,7 +118,7 @@ The game page displays a header and a game area. The title of the page links to 
 ![Modal Popup](images/readme-images/modal-popup.png)
 
 #####  Win, lose, draw messages
-To give more user feedback, text to show how the game is progressing and a alert box shows when the win/lose score of five is reached.
+How the game is progressing and a alert box shows when the win/lose score of five is reached.
 ![ x beats y you win](images/readme-images/youwin.png)
 ![ x loses y you lose](images/readme-images/losingtocpu.png)
 ![Its a Tie](images/readme-images/itsatie.png)
@@ -137,7 +137,7 @@ I created a very simple 404 page, if the user has navigated to the wrong page fo
 
 In future implementations I would like to:
 
-1. Give an option to either play against the cpu or a friend.
+1. Give an option to either play against the CPU or a friend.
 2. Keeping a log of scores of unbroken win streaks of human players.
 
 ## Technologies Used
@@ -155,7 +155,7 @@ HTML, CSS, Javascript
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-* [Sweet Alert 2](https://sweetalert2.github.io/) - A responsive, customizable replacement for alert popup boxes
+* [Sweet Alert 2](https://sweetalert2.github.io/) - A responsive, customizable replacement for alert popup boxes.
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
@@ -164,6 +164,10 @@ HTML, CSS, Javascript
 * [Favicon.io](https://favicon.io/) To create favicon for browser tab
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+* [Pixlr.com](https://pixlr.com/x/#editor) To edit image sizes.
+* [Clipartmax.com](https://www.clipartmax.com) For the royalty free clipart images to use as icons for the game
+* [emojipedia.org](https://emojipedia.org) used as a source for the emojis displayed during game play.
+* [Stackedit](https://stackedit.io/) A browser based Markdown editor
 
 - - -
 
@@ -203,18 +207,13 @@ To clone the repository:
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 - - -
-
-## Testing
-The Site has been tested on Chrome and Firefox, using Devtools in Chrome and Chrome on Android 
-
-
 # **Testing**
-The site has been tested on Chrome, Edge and Firefox, there was an issue with Firefox that is now resolved, more information regarding this in the Bugs section below. The site has also been tested on iPhone and Android devices with a minor bug concerning iPhone, this is also further explained in the Bugs section below. 
+The Site has been tested on Chrome and Firefox, using Devtools in Chrome and Chrome on Android. 
 
 ### Responsiveness
 ![AmIResponsive](images/readme-images/amiresponsivep2.png)
 
-Keeping the design of the central to the page, allowed the page to remain mobile responsive aswell as displaying well on desktop and tablet. Although on the Galaxy Fold in Chrome DevTools the site displays in line.
+Keeping the design of the central to the page, allowed the page to remain mobile responsive aswell as displaying well on desktop and tablet. Although on the Galaxy Fold in Chrome DevTools the site displays poorly with all icons inline.
 
 ![mobile-display](images/readme-images/mobile-display.png)
 
@@ -233,59 +232,52 @@ CSS file was run through (https://jigsaw.w3.org/css-validator/#validate_by_input
 The JavaScript file, was run through (https://jshint.com/) and showed no errors. Swal, used for the Sweet Alert 2, is stated as an undefined variable since it is an external file, declared in a third party library. 
 ![javascript Validation](images/readme-images/jshintvalid.png)
 
-## Validator Testing  
-  
- - HTML 
-   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fdavetrev.github.io%2Fbark-and-stride%2F) 
- - CSS 
-   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavetrev.github.io%2Fbark-and-stride%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+## **Bugs**
+During the development of Rock, Paper, Scissors I encountered numerous obstacles and bugs. The main ones are listed below. 
+    
+### Fixed Bugs
 
+* Bug: Unused variables calling to the html page had to be removed to remove warning.  
+* Fix: Rewriting the code on both the html and JavaScript files to use and id in html and define a event listener in the JavaScript solved the issue. 
 
+* Bug: Letting a user enter a name with unlimited characters causes conflict in the scoreboard area positioning
+* Fix: Setting a input limit on the characters allowed in the field solved the issue. I would like to return to this issue as I am sure a more elegant solution exists.
 
-using youtube - https://www.youtube.com/watch?v=jaVNP3nIAv0 as inspiration
-modal button build - https://www.youtube.com/watch?v=MBaw_6cPmAw&t=27s
+* Bug: In setting up the modal via the Florin Pop guide, the background of the modal and positioning of the modal caused it to fall off the screen on desktop and mobile.
+* Fix: Rewriting Css and restyling the modal to improve how it displays for the user.
 
-rock paper scissor images taken from 
+* Bug: Blank spaces were accepted in the input field for the user name
+* Fix:  Adding .trim() to the script removed the ability of the user to enter a blank name
+* Bug: Poor icon display with original size of images.
+* Fix: Improving icon position on mobile I edited and reduced clip art style to 100px x 100 px. 
 
-rock - https://www.clipartmax.com/download/m2H7Z5K9A0Z5K9A0_cartoon-rock-paper-scissors/
-scissors - https://www.clipartmax.com/download/m2i8d3Z5A0N4H7b1_scissors-cartoon-cartoon-rock-paper-scissors/
-paper - https://www.clipartmax.com/download/m2i8d3Z5i8i8Z5K9_cartoon-emoji-paper-rock-scissors-icon-rock-paper-scissors-emoji/
+### Known Bugs
+* Currently when the scoreboard is reset. the text display to the user, does not reset to a blank state!
+* Onclick="reset()" is not causing any error or undeclared issue in the JS file. 
+* Removed a H1 heading inside the modal as it was not passing html validation. I will return to fix this issue when time allows. Currently the Modal only displays "rules" with no heading
+* Area for user name entry moves slightly depending on text entered, Possible fix in justifying position of the text area. When I have more time I will return to fix this issue
+* Display on a simulated Samsung Galaxy Fold, is poor as the icons display in a vertical column, a media query is needed to solve this issue
 
-resized clip art using https://pixlr.com/x/#editor
+## Credits
 
-edited and reduced clip art style to 100px x 100 px for better positioning on mobile
+### Code Used
+The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=jaVNP3nIAv0) and a guide to making a modal popup (https://www.youtube.com/watch?v=MBaw_6cPmAw&t=27s). I have tried to deviate as much as possible and add additional features and functions , there may be some similarities in the code.
 
-emojis taken from 
-- https://emojipedia.org/party-popper/
-- https://emojipedia.org/necktie/
-- https://emojipedia.org/pile-of-poo/
+###  Media
 
-Offical rules of RPS taken from 
-- https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
+All images for the icon creation came from the following sources 
+Rock - (https://www.clipartmax.com/download/m2H7Z5K9A0Z5K9A0_cartoon-rock-paper-scissors/)
+Scissors - (https://www.clipartmax.com/download/m2i8d3Z5A0N4H7b1_scissors-cartoon-cartoon-rock-paper-scissors/)
+Paper - (https://www.clipartmax.com/download/m2i8d3Z5i8i8Z5K9_cartoon-emoji-paper-rock-scissors-icon-rock-paper-scissors-emoji/e
+emojis taken from
+- Party - (https://emojipedia.org/party-popper/)
+- Tie - (https://emojipedia.org/necktie/)
+- Poo - (https://emojipedia.org/pile-of-poo/)
+For a guide to writing this readme my mentor suggested using a fellow Code Institute students layout. (https://github.com/kera-cudmore/Bully-Book-Club#Testing)
+All other content for the site, such as introduction messages and instructions were written by myself.
 
-Get element bu tagName
-- http://www.jspatterns.com/the-ridiculous-case-of-adding-a-script-element/
+### Acknowledgments
+* I would like to thank my mentor [Jubril  Akolade](https://github.com/Jubrillionaire) whos support and patience helped guide me through this project.
+* Also a big thank you to [Brian Kilduff](https://github.com/MistaKD) who was a fantastic  sounding board when I was facing issues that I couldn't figure out and get pass!
 
-using https://www.iloveimg.com/crop-image for cropping images for readme
-
-https://stackoverflow.com/questions/37412166/how-to-make-show-hide-div-with-a-toggle-using-css
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-https://developer.mozilla.org/en-US/docs/Web/CSS/position
-https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html
-https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text
-https://www.youtube.com/watch?v=w9GNyw8AvlM
-https://www.geeksforgeeks.org/form-validation-using-html-javascript/?ref=lbp
-https://www.w3schools.com/js/js_if_else.asp
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
-https://forum.rescript-lang.org/t/coding-habit-of-unused-variables/3371/5
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/
-https://www.geeksforgeeks.org/difference-between-addeventlistener-and-onclick-in-javascript/
-
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-https://favicon.io/
-https://www.w3schools.com/html/html_favicon.asp
+- - -

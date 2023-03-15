@@ -35,7 +35,6 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
-* [Bugs] (#Bugs)
 * [Fixed Bugs](#Fixed-Bugs)
   * [Known Bugs](#Known-Bugs)
   
@@ -46,7 +45,6 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
   * [Acknowledgments](#Acknowledgments)
 
 - - -
-![The Quiz Arms Banner](documentation/the-quiz-arms-banner.png)
 
 ## User Experience (UX)
 

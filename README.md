@@ -254,6 +254,7 @@ During the development of Rock, Paper, Scissors I encountered numerous obstacles
 
 * Bug: Blank spaces were accepted in the input field for the user name
 * Fix:  Adding .trim() to the script removed the ability of the user to enter a blank name
+
 * Bug: Poor icon display with original size of images.
 * Fix: Improving icon position on mobile I edited and reduced clip art style to 100px x 100 px. 
 
@@ -262,6 +263,7 @@ During the development of Rock, Paper, Scissors I encountered numerous obstacles
 * Onclick="reset()" on index.html is not causing any error or undeclared issue in the JS file. 
 * Area for user name entry moves slightly depending on text entered, Possible fix in justifying position of the text area. When I have more time I will return to fix this issue
 * Display on a simulated Samsung Galaxy Fold, is poor as the icons display in a vertical column, a media query is needed to solve this issue
+* Footer floating on mobile view - Last minute bug, dont have time to fix before submission. Will return to fix asap
 
 ## Credits
 

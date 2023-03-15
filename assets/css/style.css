@@ -12,6 +12,7 @@ body {
     background: linear-gradient(203deg, rgba(8, 9, 8, 1) 0%, rgba(69, 65, 66, 1) 100%);
     min-height: 100vh;
 }
+
 /* Header styling and link targeting */
 header {
     background: white;
@@ -23,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-header > a {
+header>a {
     color: #24272e;
     text-align: center;
     font-family: "Tilt Neon", sans-serif;
@@ -42,6 +43,7 @@ h2 {
 #charlength {
     color: white;
 }
+
 /* 404 page styleing */
 #errorpg {
     display: flex;
@@ -68,6 +70,7 @@ h2 {
 .hide {
     display: none;
 }
+
 /* Scoreboard */
 .score-board {
     border: 3px solid white;
@@ -105,17 +108,19 @@ h2 {
     top: 30px;
     left: 170px;
 }
+
 /* Game result Styling */
 .result {
     font-size: 40px;
     color: white;
 }
 
-.result > p {
+.result>p {
     text-align: center;
     font-family: "Tilt Neon", sans-serif;
     font-weight: bold;
 }
+
 /* Choice of R, P, S styling */
 .choices {
     text-align: center;
@@ -135,6 +140,7 @@ h2 {
     cursor: pointer;
     background: #393c42;
 }
+
 /* Reset button style */
 #reset {
     text-align: center;
@@ -202,6 +208,7 @@ button {
     color: black;
     font-size: large;
 }
+
 /* border around icon glow to indicate win/lose/draw */
 .win-glow {
     border: 4px solid #45cf7a;
@@ -218,14 +225,14 @@ button {
     box-shadow: 0 0 10px #25292b;
 }
 
+
 .footer {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem;
-    color: white;
     text-align: center;
+    color: white;
     font-family: "Tilt Neon", sans-serif;
-  }
-
+}

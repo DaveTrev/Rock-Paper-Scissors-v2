@@ -218,19 +218,14 @@ button {
     box-shadow: 0 0 10px #25292b;
 }
 
-footer {
-    bottom: 0;
-    width: 100%;
-    position: relative;
-}
-
 .footer {
-    height: 100px;
-    font-family: "Tilt Neon", sans-serif;
-    margin: auto;
-    width: 309px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: white;
     text-align: center;
-    padding: 43px;
-    color: #ffffff;
-} 
+    font-family: "Tilt Neon", sans-serif;
+  }
 

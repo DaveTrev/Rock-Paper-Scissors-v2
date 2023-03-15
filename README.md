@@ -257,17 +257,16 @@ During the development of Rock, Paper, Scissors I encountered numerous obstacles
 * Bug: Poor icon display with original size of images.
 * Fix: Improving icon position on mobile I edited and reduced clip art style to 100px x 100 px. 
 
+
 ### Known Bugs
-* Currently when the scoreboard is reset. the text display to the user, does not reset to a blank state!
-* Onclick="reset()" is not causing any error or undeclared issue in the JS file. 
-* Removed a H1 heading inside the modal as it was not passing html validation. I will return to fix this issue when time allows. Currently the Modal only displays "rules" with no heading
+* Onclick="reset()" on index.html is not causing any error or undeclared issue in the JS file. 
 * Area for user name entry moves slightly depending on text entered, Possible fix in justifying position of the text area. When I have more time I will return to fix this issue
 * Display on a simulated Samsung Galaxy Fold, is poor as the icons display in a vertical column, a media query is needed to solve this issue
 
 ## Credits
 
 ### Code Used
-The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=jaVNP3nIAv0) and a guide to making a modal popup (https://www.youtube.com/watch?v=MBaw_6cPmAw&t=27s). I have tried to deviate as much as possible and add additional features and functions , there may be some similarities in the code.
+The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=jaVNP3nIAv0) and a guide to making a modal popup (https://www.youtube.com/watch?v=MBaw_6cPmAw&t=27s). I have tried to deviate as much as possible and add additional features and functions, some similarities in the code may still exist.
 
 ###  Media
 

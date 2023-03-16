@@ -20,7 +20,6 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
   * [Features](#Features)
     * [The Home Page](#The-Home-Page)
     * [The Game Page](#The-Game-Page)
-    * [The High Scores Page](#The-High-Scores-Page)
     * [The 404 Error Page](#The-404-Error-Page)
     * [Future Implementations](#Future-Implementations)
     
@@ -35,7 +34,6 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
-* [Bugs] (#Bugs)
 * [Fixed Bugs](#Fixed-Bugs)
   * [Known Bugs](#Known-Bugs)
   
@@ -239,7 +237,7 @@ CSS file was run through (https://jigsaw.w3.org/css-validator/#validate_by_input
 The JavaScript file, was run through (https://jshint.com/) and showed no errors. Swal, used for the Sweet Alert 2, is stated as an undefined variable since it is an external file, declared in a third party library. 
 ![javascript Validation](images/readme-images/jshintvalid.png)
 
-# **Bugs**
+## **Bugs**
 During the development of Rock, Paper, Scissors I encountered numerous obstacles and bugs. The main ones are listed below. 
     
 ### Fixed Bugs

@@ -225,8 +225,12 @@ button {
     box-shadow: 0 0 10px #25292b;
 }
 
+.wrapper {
+    position: relative;
+    padding-bottom: 100px;
+}
 
-.footer {
+footer {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -235,4 +239,6 @@ button {
     text-align: center;
     color: white;
     font-family: "Tilt Neon", sans-serif;
+    width: 100vw;
+    height: 100px;
 }

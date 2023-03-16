@@ -35,6 +35,7 @@ The website Rock Paper Scissors, is a simple page for users to try their hand at
     * [How to Clone](#How-to-Clone)
 
 * [Testing](#Testing)
+* [Bugs] (#Bugs)
 * [Fixed Bugs](#Fixed-Bugs)
   * [Known Bugs](#Known-Bugs)
   

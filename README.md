@@ -239,7 +239,7 @@ CSS file was run through (https://jigsaw.w3.org/css-validator/#validate_by_input
 The JavaScript file, was run through (https://jshint.com/) and showed no errors. Swal, used for the Sweet Alert 2, is stated as an undefined variable since it is an external file, declared in a third party library. 
 ![javascript Validation](images/readme-images/jshintvalid.png)
 
-## **Bugs**
+# **Bugs**
 During the development of Rock, Paper, Scissors I encountered numerous obstacles and bugs. The main ones are listed below. 
     
 ### Fixed Bugs

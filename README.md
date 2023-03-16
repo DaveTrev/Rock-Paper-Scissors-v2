@@ -234,7 +234,17 @@ All HTML files were run through (https://validator.w3.org/#validate_by_input)
 CSS file was run through (https://jigsaw.w3.org/css-validator/#validate_by_input) to ensure all code meet the correct standard. No errors or warnings were found for HTML or CSS. 
 ![Html Validation](images/readme-images/htmlp2.png)
 ![Css Validation](images/readme-images/cssp2.png)
-The JavaScript file, was run through (https://jshint.com/) and showed no errors. Swal, used for the Sweet Alert 2, is stated as an undefined variable since it is an external file, declared in a third party library. 
+The JavaScript file, was run through the official [Jshint validator](https://jshint.com/) and showed no errors. Swal, used for the Sweet Alert 2, is stated as an undefined variable since it is an external file, declared in a third party library. 
+- No errors were found when passing through 
+      - There are 20 functions in this file. 
+      - Function with the largest signature take 2 arguments, while the median is 0.
+      - Largest function has 10 statements in it, while the median is 2.5.
+      - The most complex function has a cyclomatic complexity value of 10 while the median is 1.
+      - One undefined variable (this is an external file declared in a third party library [SweetAlert2](https://sweetalert2.github.io/) )
+          - 44	Swal
+          - 85	Swal
+          - 102	Swal.
+
 ![javascript Validation](images/readme-images/jshintvalid.png)
 
 ## **Bugs**
